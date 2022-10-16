@@ -32,3 +32,22 @@ export const projects = [
       link: "https://rpubs.com/gbstorey/project1",
     },
   ];
+
+export const skills = [
+  "React", "Javascript", "UI/UX", "Data Analysis/Visualization", "Node", "Express", "Python", "C++", "MATLAB", "R"
+]
+
+export const testimonials = [
+  {
+    company: "Capital One",
+    name: "Joe Alestra",
+    quote: "...",
+    image: "https://thumbs.dreamstime.com/b/creative-vector-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mo-107388687.jpg"
+  },
+  {
+    company: "Arizona State University",
+    name: "Sabiha Mahzabeen",
+    quote: "...",
+    image: "https://thumbs.dreamstime.com/b/creative-vector-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mo-107388687.jpg"
+  }
+]
