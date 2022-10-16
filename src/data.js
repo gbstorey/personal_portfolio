@@ -4,31 +4,31 @@ export const projects = [
       subtitle: "MERN Stack",
       description:
         "Revitalize is a concept for an upskilling aggregation platform that supports learners financially with a rent subsidy funded by an Arizona Affordable Housing grant.",
-      image: "https://i.imgur.com/Kv3VyqY.png",
+      image: "https://i.imgur.com/hzjDNIW.png",
       link: "https://revitalize.netlify.app/",
     },
     {
-      title: "React Tracks",
-      subtitle: "React and Python",
+      title: "Tindog",
+      subtitle: "HTML and CSS",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://reedbarger.com",
+        "Tindog is a platform for dogs to find friends and romance. It uses pure HTML and CSS to create a beautiful landing page. ",
+      image: "https://i.imgur.com/tWUqlta.png",
+      link: "https://gbstorey.github.io/tindog_landing_page/",
     },
     {
-      title: "DevChat",
-      subtitle: "React and Firebase",
+      title: "Monage",
+      subtitle: "Express, Node, and EJS",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://jsbootcamp.com",
+        "Landing page recreation of a Dribbble project. Includes animation and high-quality graphics.",
+      image: "https://i.imgur.com/qbDsCxM.png",
+      link: "https://github.com/gbstorey/monage_copy",
     },
     {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
+      title: "Data Analysis of Air Pollution",
+      subtitle: "R Language",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
+        "Created a report using R analyzing the presence of heavy metals in Arizona air. The plots are interactive and I also presented the data in a recorded presentation.",
+      image: "https://i.imgur.com/Gcwpdfs.png",
+      link: "https://rpubs.com/gbstorey/project1",
     },
   ];
