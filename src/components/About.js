@@ -27,7 +27,7 @@ export default function About() {
               <img
                 className="object-cover object-center rounded hidden md:inline"
                 alt="hero"
-                src="https://i.imgur.com/V5ptXIR.jpg"
+                src="https://i.imgur.com/qK6KKXp.jpg"
               />
             </div>
           </div>
