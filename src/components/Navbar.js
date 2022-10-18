@@ -5,9 +5,9 @@ export default function Navbar() {
         <header className="bg-gray-800 md:sticky top-0 z-10">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0">
-              <a href="#about" className="ml-0 md:ml-3 text-xl w-full text-center md:w-auto md:text-right">
+              <p href="#about" className="ml-0 md:ml-3 text-xl w-full text-center md:w-auto md:text-right">
                 Garrett Storey
-              </a>
+              </p>
             </a>
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
               <a href="#projects" className="mr-0 md:mr-5 hover:text-white w-full text-center py-2 md:py-0 md:w-auto md:text-right">
