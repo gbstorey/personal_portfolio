@@ -19,7 +19,7 @@ const formReducer = (state, action) => {
         nameIsValid: 
           state.nameIsValid,
         emailIsValid:
-          action.val.includes("@"),
+          action.val.includes("@") && action.val.trim().length > 5,
         messageIsValid:
           state.messageIsValid
       }
