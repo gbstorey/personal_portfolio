@@ -142,7 +142,7 @@ export default function Contact() {
               <p className="leading-relaxed mb-5">
                 Please reach out using this form. I would love to hear from you!
               </p>
-              <div className="relative mb-4">
+              <div className={`${formState.nameIsValid === true || formState.nameIsValid === null? "relative mb-4" : "relative mb-0"}`}>
                 <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                   Name
                 </label>
@@ -157,6 +157,9 @@ export default function Contact() {
                   onBlur={(e) => dispatchForm({type: 'INPUT_BLUR'})}
                   onChange={(e) => dispatchForm({type: 'NAME_INPUT', val: e.target.value})}
                 />
+                {formState.nameIsValid === true || formState.nameIsValid === null ? null:
+                <p className="leading-relaxed text-rose-600 ">Your name doesn't seem long enough!</p>
+                }
               </div>
               <div className="relative mb-4">
                 <label htmlFor="email" className="leading-7 text-sm text-gray-400">
@@ -173,6 +176,9 @@ export default function Contact() {
                   onBlur={(e) => dispatchForm({type: 'INPUT_BLUR'})}
                   onChange={(e) => dispatchForm({type: 'EMAIL_INPUT', val: e.target.value})}
                 />
+                {formState.emailIsValid === true || formState.emailIsValid === null ? null:
+                <p className="leading-relaxed text-rose-600 ">Minimum 5 characters, requires "@" symbol.</p>
+                }
               </div>
               <div className="relative mb-4">
                 <label
@@ -190,6 +196,9 @@ export default function Contact() {
                   onBlur={(e) => dispatchForm({type: 'INPUT_BLUR'})}
                   onChange={(e) => dispatchForm({type: 'MESSAGE_INPUT', val: e.target.value})}
                 />
+                {formState.messageIsValid === true || formState.messageIsValid === null ? null:
+                <p className="leading-relaxed text-rose-600 ">Minimum 10 characters.</p>
+                }
               </div>
               <button
                 type="submit"
