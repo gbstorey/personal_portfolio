@@ -72,10 +72,10 @@ export default function Contact() {
     }, [formState.name, formState.message, formState.email])
 
     function handleSubmit(e) {
+      console.log(formState)
         e.preventDefault();
-        if (formState.isValid === false) {
-          alert("contact form not valid")
-        } else {
+        if (formState.emailIsValid !== true || formState.nameIsValid !== true || formState.messageIsValid !== true ) { alert("contact form not valid")} 
+        else {
           const myForm = e.target
           const formData = new FormData(myForm)
 
