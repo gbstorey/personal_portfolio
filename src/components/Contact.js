@@ -7,7 +7,7 @@ const formReducer = (state, action) => {
         return {
         name: action.val, email: state.email, message: state.message, 
         nameIsValid: 
-          action.val.trim().length > 2,
+          nameValidation(action.val),
         emailIsValid:
           state.emailIsValid,
         messageIsValid:
@@ -19,7 +19,7 @@ const formReducer = (state, action) => {
         nameIsValid: 
           state.nameIsValid,
         emailIsValid:
-          action.val.includes("@") && action.val.trim().length > 5,
+          emailValidation(action.val),
         messageIsValid:
           state.messageIsValid
       }
@@ -31,7 +31,7 @@ const formReducer = (state, action) => {
         emailIsValid:
           state.emailIsValid,
         messageIsValid:
-          action.val.trim().length > 10
+          messageValidation(action.val)
       }
       case 'INPUT_BLUR':
         return {
@@ -47,6 +47,30 @@ const formReducer = (state, action) => {
       return { name: ' ', email: ' ', message: ' ', 
       nameIsValid: null, emailIsValid: null, messageIsValid: null};
 }};
+
+function emailValidation(email) {
+  if (email.includes("@") && email.trim().length > 5) {return true} 
+  else {return false};
+};
+
+function nameValidation(name) {
+  if (name.trim().length > 2) {return true} 
+  else {return false};
+};
+
+function messageValidation(message) {
+  if (message.trim().length > 10) {return true} 
+  else {return false};
+};
+
+function validateAll(email, name, message) {
+  if (
+  emailValidation(email) === true && 
+  nameValidation(name) === true && 
+  messageValidation(message) === true
+  ) {return true}
+  else {return false}
+};
 
 export default function Contact() {
 
@@ -74,11 +98,11 @@ export default function Contact() {
     function handleSubmit(e) {
       console.log(formState)
         e.preventDefault();
-        if (formState.emailIsValid !== true || formState.nameIsValid !== true || formState.messageIsValid !== true ) { alert("contact form not valid")} 
-        else {
+        if (validateAll(formState.email, formState.name, formState.message) !== true) { 
+          alert("contact form not valid")
+        } else {
           const myForm = e.target
           const formData = new FormData(myForm)
-
           fetch("/", {
               method: "POST",
               headers: {"Content-Type": "application/x-www-form-urlencoded"},
