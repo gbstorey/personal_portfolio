@@ -16,12 +16,12 @@ export const projects = [
       link: "https://gbstorey.github.io/tindog_landing_page/",
     },
     {
-      title: "Monage",
-      subtitle: "Express, Node, and EJS",
+      title: "ReactMeals",
+      subtitle: "MERN Stack",
       description:
-        "Landing page recreation of a Dribbble project. Includes animation and high-quality graphics.",
-      image: "https://i.imgur.com/qbDsCxM.png",
-      link: "https://github.com/gbstorey/monage_copy",
+        "My recent bootcamp project using advanced React principles. useReducer, useContext, useRef, useEffect, and useState are employed.",
+      image: "https://i.imgur.com/0pqyUzX.png",
+      link: "https://gbstorey-food.netlify.app/",
     },
     {
       title: "Data Analysis of Air Pollution",
