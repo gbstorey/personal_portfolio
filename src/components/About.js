@@ -1,34 +1,40 @@
+import Navbar from "./Navbar";
+import React from "react";
+
 export default function About() {
     return (
-        <section id="about">
-          <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+        <section id="about" className={"md:bg-profile bg-right-top bg-no-repeat sm-h-full h-initial z-0 " +
+            "max-w-screen-xl mx-auto md:h-hero"}>
+          <Navbar />
+            <hr className={"pb-6 md:invisible"}/>
+          <div className="mx-auto flex px-10 md:flex-row flex-col sm:pb-5
+          h-5/6 base:bg-none max-w-screen-xl">
+            <div className="md:w-7/12 lg:w-5/12 flex flex-col
+            md:items-start md:text-left md:mb-16 md:mb-0 items-center text-center">
+              <h1 className="sm:text-5xl text-4xl mb-4 font-medium text-white">
                 Hi, I'm Garrett.
-                <br className="hidden lg:inline-block" /> I'm a full-stack web developer.
+                <span className={"text-2xl block pt-2"}>Owner of Potentia Web Solutions</span>
               </h1>
-              <p className="mb-8 leading-relaxed text-xl">
-                I build beautiful and accessible front-end designs reinforced by state-of-the-art backend engineering. I am proficient in the MERN stack and fluent in Javascript, Python, and C++.
+              <p className="mb-8 leading-relaxed md:text-xl sm:text-2xl text-gray-200">
+                  I build elegant and useful solutions to help New Mexican businesses grow and succeed.
+                  Using cutting-edge web design and ecommerce strategies, we can obliterate the competition.
               </p>
               <div className="flex justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white bg-red-900 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 rounded text-lg">
+                  className="inline-flex text-white bg-none text-white font-semibold
+                  border-2 border-white text-center order-0 py-2 px-6 hover:bg-white/20
+                  rounded text-lg">
                   Work With Me
                 </a>
                 <a
                   href="#projects"
-                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  className="ml-4 inline-flex text-amber-900/90 bg-devil-gold
+                  text-center font-bold py-2 px-6 hover:bg-devil-gold/90
+                  rounded text-lg">
                   See My Past Work
                 </a>
               </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded hidden md:inline"
-                alt="hero"
-                src="https://i.imgur.com/qK6KKXp.jpg"
-              />
             </div>
           </div>
         </section>
