@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <header className="bg-none md:sticky top-0 z-10 max-w-screen-xl px-10 mx-auto z-10">
+        <header className="bg-none top-0 z-10 max-w-screen-xl px-10 mx-auto z-10">
           <div className="flex flex-wrap py-5 flex-col md:flex-row mx-0 items-center">
             <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0">
               <p className="text-3xl md:text-xl w-full text-center md:text-right">
