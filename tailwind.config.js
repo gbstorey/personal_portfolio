@@ -12,6 +12,9 @@ module.exports = {
       },
       height: {
         'hero': '500px'
+      },
+      maxWidth: {
+        '1/2': '50%',
       }
     },
   },

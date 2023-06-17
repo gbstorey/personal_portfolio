@@ -1,27 +1,30 @@
 export const projects = [
     {
-      title: "Revitalize",
-      subtitle: "MERN Stack",
+      title: "CoffeeWatch",
+      subtitle: "Next.js, Firebase, Typescript",
       description:
-        "Revitalize is a concept for an upskilling aggregation platform that supports learners financially with a rent subsidy funded by an Arizona Affordable Housing grant.",
+          `Full-stack web application that allows users to post coffee brand reviews while quantifying 
+          flavor metrics. Built and deployed in 12 hours learning the above tech stack from scratch.`,
+      image: "/projects/coffeewatch.png",
+      link: "https://coffeewatch.vercel.app/#",
+    },
+    {
+      title: "Revitalize",
+      subtitle: "React, Node, Express, MongoDB",
+      description:
+        `Revitalize is a concept for an upskilling aggregation platform that supports learners financially 
+        with a rent subsidy funded by an Arizona Affordable Housing grant. It was developed in 48 hours.`,
       image: "https://i.imgur.com/hzjDNIW.png",
       link: "https://revitalize.netlify.app/",
     },
     {
-      title: "Tindog",
-      subtitle: "HTML and CSS",
+      title: "Potentia Web Solutions",
+      subtitle: "Figma, Illustrator, Photoshop",
       description:
-        "Tindog is a platform for dogs to find friends and romance. It uses pure HTML and CSS to create a beautiful landing page. ",
-      image: "https://i.imgur.com/tWUqlta.png",
-      link: "https://gbstorey.github.io/tindog_landing_page/",
-    },
-    {
-      title: "ReactMeals",
-      subtitle: "MERN Stack",
-      description:
-        "My recent bootcamp project using advanced React principles. useReducer, useContext, useRef, useEffect, and useState are employed.",
-      image: "https://i.imgur.com/0pqyUzX.png",
-      link: "https://gbstorey-food.netlify.app/",
+        `Founded Potentia Web Solutions, a New Mexican web development company specializing in ecommerce,
+        Shopify integrations, and SEO with extensive testing, logging and monitoring solutions.`,
+      image: "/projects/potentia.png",
+      link: "#",
     },
     {
       title: "Data Analysis of Air Pollution",
