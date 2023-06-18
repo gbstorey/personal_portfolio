@@ -3,7 +3,7 @@ import { projects } from "../data";
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-gray-900 bg-gray-200 body-font scroll-mt-16
+        <section id="projects" className="text-gray-900 bg-gray-50 body-font scroll-mt-16
         text-lg md:text-xl sm:text-2xl">
           <div className="py-10 mx-auto text-center md:text-left px-10">
             <div className="flex flex-col w-full mb-10">

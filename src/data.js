@@ -37,7 +37,7 @@ export const projects = [
   ];
 
 export const skills = [
-  "React", "Javascript", "UI/UX", "Data Analysis/Visualization", "Node", "Express", "Python", "C++", "MATLAB", "R"
+  "React", "Javascript", "UI/UX", "Data Analysis", "Node", "Express", "Python", "C++", "R"
 ]
 
 export const testimonials = [
@@ -45,15 +45,8 @@ export const testimonials = [
     company: "Arizona State University",
     name: "Julia Hernandez",
     quote:
-      "Garrett has been a reliable and endless source of help that spans across laboratory activities and intensive ecological fieldwork. University students and staff benefit from his knowledge in programming and chemistry, and especially his willingness to teach and explain. ",
+      "Garrett has been a reliable and endless source of help. University students and staff benefit from his knowledge in programming and chemistry, and especially his willingness to teach and explain. ",
     image:
       "https://static.sustainability.asu.edu/img/people/julia-hernandez.jpg",
-  },
-  {
-    company: "Arizona State University",
-    name: "Sabiha Mahzabeen",
-    quote: "...",
-    image:
-      "https://thumbs.dreamstime.com/b/creative-vector-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mo-107388687.jpg",
   },
 ];
