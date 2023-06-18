@@ -29,8 +29,8 @@ export default function About() {
                 </a>
                 <a
                   href="#projects"
-                  className="ml-4 inline-flex text-gray-900 bg-devil-gold border border-gray-900
-                  text-center font-bold py-2 px-6 hover:bg-devil-gold/80
+                  className="ml-4 inline-flex text-gray-900 bg-amber-600 border border-gray-900
+                  text-center font-bold py-2 px-6 hover:bg-devil-gold/80 text-gray-200
                   rounded text-lg">
                   See My Past Work
                 </a>
