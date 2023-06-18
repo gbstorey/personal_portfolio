@@ -21,7 +21,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noreferrer"
                   key={project.image}
-                  className="flex-grow basis-1/2 sm:basis-1/3 border-2 border-gray-700 h-full">
+                  className="flex-grow basis-1/2 sm:basis-1/3 border border-gray-700 h-full">
                   <div className="flex relative sm:h-72">
                     <img
                       alt="gallery"

@@ -18,7 +18,7 @@ export default function Skills() {
             <div className="flex flex-wrap justify-between sm:mb-2">
               {skills.map((skill) => (
                 <div key={skill} className="md:w-1/3 w-full p-1">
-                  <div className="border-2 border-gray-700 rounded flex p-4 h-full items-center">
+                  <div className="border border-gray-700 rounded flex p-4 h-full items-center">
                     <CheckBadgeIcon className="text-amber-600 w-6 h-6 flex-shrink-0 mr-4" />
                     <span className="font-semibold">
                       {skill}

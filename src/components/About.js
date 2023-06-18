@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About() {
     return (
-        <section id="about" className={"bg-gray-200 md:bg-profile bg-right-top bg-no-repeat sm-h-full h-initial z-0 " +
+        <section id="about" className={"bg-gray-50 md:bg-profile bg-right-top bg-no-repeat sm-h-full h-initial z-0 " +
             "max-w-screen-xl mx-auto md:h-hero"}>
           <Navbar />
           <div className="mx-auto flex px-10 md:flex-row flex-col sm:pb-5

@@ -11,7 +11,7 @@ export default function Testimonials() {
             <div className="flex flex-wrap">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.name.toString()} className="md:w-1/2 p-1 w-full text-left">
-                  <div className="h-full p-8 rounded border-2 border-gray-900">
+                  <div className="h-full p-8 rounded border border-gray-900">
                     <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                     <div className="inline-flex items-center">
                       <img
